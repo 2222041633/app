@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1610977021738'); /* IE9 */
+  src: url('iconfont.eot?t=1610977021738#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOYAAsAAAAACBgAAANMAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDHIJeATYCJAMUCwwABCAFhG0HYxsFB1GU7MkE2Y8EG5xGwSGEFLFQK+rRlhcJ/URfRvC1/NVvZjawS8gOVIiKwufyKHxWKBRYXEjSoUxy4e6Evvo/6X29JAthVvrslq7I/JnEE63O6BYqD0LR3LVC0YCgjBNbHdBmdpTX/+eY6dIKNP/aNrcKqqYuC9obVXDybJZ1HWR3QCfKN4zdRHkQNxPozKvEHLT3DkCYAqwKxKUkzEJYSq3UJIdWqEsOFvEqWJvu0isAL/z34x/4IoykysDGw4u2ADR+M99aPjA4YIIiCMczQjtGxgZQiKtS8yUu9G3gdM70IDtAp5Wksca1fnd/a4MBsQhYQwf/4VFkSRA1kW8Y7PAXvhksiJWtIpfMdzeXxLcmupcbVaBDgxvgEcAt+LwkCzEenxGcDY8qpFEXXjDcwZcl0fefp7M7z+RTl4A9cDky+vTVoglXUqJ2R61cAogQmJPYzctF0evbmMiLVzO5rSsjEMVFj0a0eExEFBM9vrZ2cD01dnX1wEqSPbx+MCVl7VTSwBBhSVo5kDw4wJK8ejp1eFCWWrXl/eCDX0/yHqAnvx7AlVjM+aYgxh/zIBYReznftwc8d+6c/TUQb2gvH98We06rcwkmvhdanXHc3j51DlzHSE9G3GBcZu9Z+EleP7FXRDOh7PrrV1Ml1/P1yGKJ/Kq8zF4A5E32DiCvMpuAPMWe+Xt/42h2z+h0bO3/sL6A94r+5+qin7+VaC38V8KWBcUVA01V7FwssOMrKzjuWPRbsv6QfdKXcawzIDaGVheKkDTmIGstIAt2Ayq9Lai1tqGzruN4b4qFE2UIa44KEMbdhGTUG2TjXiML9jNUZn2H2nhw0DmKxAv2lkKKaLHwrIMDaG4ZSTzVCdI5EUFyHxbm1VkrKeakIWzZkhN5XZ5ssAPr2Bpji70g+ByHIGJRDbULt8OqSpFhURnzjkt0HKPa7SZl3+TiqQYR9lmwWQ4sAJmzDJHwKB2hnR0RuZ/vgwnmqWZZNXkd3iGYxSaNjni5eFogOxR6q7xreY1tgcDH4SAQwkJpkHZhHqZSUYhRPk+G8RwuYg+PoZobFiNtFa75Vdoz7oIO2FlFihwlqqj1x2rV4Q9XabNL0XEJDpQSJT2aV6mNAQA=') format('woff2'),
+  url('iconfont.woff?t=1610977021738') format('woff'),
+  url('iconfont.ttf?t=1610977021738') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1610977021738#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.al-icon-max:before {
+  content: "\e66d";
+}
+
+.al-icon-maxed:before {
+  content: "\e64a";
+}
+
+.al-icon-min:before {
+  content: "\e644";
+}
+
+.al-icon-close:before {
+  content: "\e601";
+}
+

@@ -1,9 +1,11 @@
 'use strict'
 
-import { app, protocol, BrowserWindow, Menu } from 'electron'
+import { app, protocol, BrowserWindow, Menu, ipcMain } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
 const isDevelopment = process.env.NODE_ENV !== 'production'
+
+
 
 //关闭窗口默认菜单
 Menu.setApplicationMenu(null)
@@ -27,6 +29,31 @@ async function createWindow() {
     }
   })
 
+  ipcMain.on('window-max', () => {
+    if (win.isMaximized()) {
+      win.restore()
+    } else {
+      win.maximize()
+    }
+  })
+  ipcMain.on('window-min', () => {
+    win.minimize()
+  })
+
+  ipcMain.on('window-close', () => {
+    win.close();
+  })
+
+  win.on('maximize', function () {
+    win.webContents.send('main-window-max');
+  })
+  win.on('unmaximize', function () {
+    win.webContents.send('main-window-unmax');
+  })
+
+
+
+
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
     await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
@@ -36,6 +63,7 @@ async function createWindow() {
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
   }
+
 }
 
 // Quit when all windows are closed.
@@ -82,3 +110,4 @@ if (isDevelopment) {
     })
   }
 }
+

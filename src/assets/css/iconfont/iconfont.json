@@ -1,0 +1,37 @@
+{
+  "id": "2334450",
+  "name": "app",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6944410",
+      "name": "最大化",
+      "font_class": "al-icon-max",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "5707384",
+      "name": "最大化",
+      "font_class": "al-icon-maxed",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "7636834",
+      "name": "最小化",
+      "font_class": "al-icon-min",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "16605059",
+      "name": "关  闭",
+      "font_class": "al-icon-close",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}
