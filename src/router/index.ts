@@ -1,14 +1,13 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../components/Home.vue'
-
+import Skeleton from '../components/webDebugger/Skeleton.vue'
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  }
-]
+    path: '/Skeleton',
+    name: 'Skeleton',
+    component: Skeleton
+  },
 
+]
 const router = createRouter({
   history: createWebHashHistory(),
   routes

@@ -37,8 +37,8 @@ export default defineComponent({
 #outer {
   line-height: 30px;
   height: 30px;
-  background-color: #202120;
-  color: #ccc;
+  background-color: #3f85ed;
+  color: #fff;
   position: relative;
   -webkit-user-select: none;
 }
@@ -71,9 +71,9 @@ export default defineComponent({
 
 .item span:nth-child(2):hover,
 .item span:nth-child(1):hover {
-  background-color: #353633;
+  background-color: #0a63e9;
 }
 .item span:nth-child(3):hover {
-  background-color: #d41223;
+  background-color: #e81123;
 }
 </style> 

@@ -44,7 +44,6 @@ export function close(event: MouseEvent) {
 
 export function init() {
     const max = document.querySelector('.al-icon-max')
-    console.log(max);
     ipcRenderer.on('main-window-max', (event: any) => {
         max?.classList.remove('al-icon-max');
         max?.classList.add('al-icon-maxed');

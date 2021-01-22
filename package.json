@@ -13,7 +13,7 @@
   },
   "main": "background.js",
   "dependencies": {
-    "element-plus": "^1.0.1-alpha.19",
+    "element-plus": "^1.0.1-beta.27",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vue-template-compiler": "^2.6.12",

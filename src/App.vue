@@ -1,16 +1,35 @@
 <template>
-  <router-view></router-view>
+  <frame-bar title="bbs.125.la"></frame-bar>
+  <div class="warp">
+    <nav-menu></nav-menu>
+    <div class="router_outer">
+      <router-view v-slot="{ Component }">
+        <keep-alive>
+          <component :is="Component"></component>
+        </keep-alive>
+      </router-view>
+    </div>
+  </div>
 </template>
-
 <script>
+import FrameBar from "./components/FrameBar";
+import NavMenu from "./components/NavMenu";
 export default {
   name: "App",
+  components: {
+    FrameBar,
+    NavMenu,
+  },
 };
 </script>
 
-<style>
-#app {
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
-    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+<style scoped>
+.warp {
+  display: flex;
+  justify-content: flex-start;
+}
+.router_outer{
+  padding: 10px;
+  width: calc(100vw - 64px);
 }
 </style>

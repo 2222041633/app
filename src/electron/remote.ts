@@ -15,3 +15,9 @@ export function drag(elementId: string) {
         el && (el.style.cssText = '-webkit-app-region: drag')
     }
 }
+
+export function showErrorMessage(title: string, content: string) {
+    if (remote) {
+        remote.dialog.showErrorBox(title, content);
+    }
+}
